@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/NasSilverBullet/golang-interface-practice/pkg"
+)
 
 func main() {
-	fmt.Println("interface")
+	u := pkg.NewUser()
+	(*u).SayHi()
+	(*u).SayBye()
 }
